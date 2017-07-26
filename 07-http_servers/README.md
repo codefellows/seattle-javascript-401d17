@@ -2,9 +2,9 @@
 ===
 
 ## HTTP Resources
-* skim [Nodejs http module]
-* skim [Wiki list of header fields]
-* read [What is a rest api?]
+* skim [nodejs http module]
+* skim [wiki list of header fields]
+* read [what is a rest api?]
 
 ## Learning Objectives
 * students will be able to identify qualities of the HTTP protocol
@@ -86,6 +86,6 @@
         * _note:_ `req` and `res` are just naming conventions (best practice is to use these conventions)
 
 <!--links -->
-[Nodejs http module]: https://nodejs.org/api/http.html
-[What is a rest api?]: https://medium.com/@lazlojuly/what-is-a-restful-api-fabb8dc2afeb#.nm7uiiltt
-[Wiki list of header fields]: https://en.wikipedia.org/wiki/List_of_HTTP_header_fields#Request_fields
+[nodejs http module]: https://nodejs.org/api/http.html
+[what is a rest api?]: https://medium.com/@lazlojuly/what-is-a-restful-api-fabb8dc2afeb#.nm7uiiltt
+[wiki list of header fields]: https://en.wikipedia.org/wiki/List_of_HTTP_header_fields#Request_fields
