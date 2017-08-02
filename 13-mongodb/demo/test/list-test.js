@@ -4,23 +4,25 @@ const expect = require('chai').expect;
 const request = require('superagent');
 const List = require('../model/list.js');
 const PORT = process.env.PORT || 3000;
+const mongoose = require('mongoose');
 
-process.env.MONGODB_URI = 'mongodb://localhost/listtest';
+//process.env.MONGODB_URI = 'mongodb://localhost/listofnotes';
 
+mongoose.Promise = Promise;
 require('../server.js');
 
 const url = `http://localhost:${PORT}`;
 const exampleList = {
   name: 'test list name'
-};
+}
 
 describe('List Routes', function() {
   describe('POST: /api/list', function() {
-    describe('with a valid body', function() {
+    describe('with a valid req body', function() {
       after( done => {
         if (this.tempList) {
           List.remove({})
-          .then(() => done())
+          .then( () => done())
           .catch(done);
           return;
         }
@@ -55,12 +57,12 @@ describe('List Routes', function() {
 
       after( done => {
         delete exampleList.timestamp;
-        if(this.tempList) {
+        if (this.tempList) {
           List.remove({})
-          .then(() => done())
+          .then( () => done())
           .catch(done);
           return;
-        };
+        }
         done();
       });
 
