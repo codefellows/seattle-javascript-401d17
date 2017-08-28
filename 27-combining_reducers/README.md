@@ -27,10 +27,4 @@
   * `beforeEach`, `afterEach` (same as mocha)
   * `test` (same as mocha's `it`)
   * `expect` (similar to chai's `expect` syntax)
-
-###### enzyme
-* **enzyme** is a utility designed to ease the testing of react components
-* it has a jQuery like api that helps interacting with components and provides several methods for compiling/rendering
-* `shallow(<Component />)` - shallow rendering is useful to test a component without indirectly asserting behavior of child components
-* `render(<Component />)` - static rendering is used to render components to static html (text) and analyze the resulting HTML structure
-* `mount(<Component />)` - full rendering is ideal when your components interact with DOM APIs
+* we'll be using **jest** to test our application's actions, reducers, middleware, and components
