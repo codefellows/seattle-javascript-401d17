@@ -1,4 +1,4 @@
-![cf](http://i.imgur.com/7v5ASc8.png) 27: Combining Reducers & Front End Testing
+![cf](http://i.imgur.com/7v5ASc8.png) 27: Combining Reducers & Testing Actions/Reducers
 ===
 
 ## Learning Objectives
