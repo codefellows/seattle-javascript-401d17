@@ -5,6 +5,7 @@
 * students will be able to use SCSS to create component based and modular CSS styles
 * students will be able to *generally* conform to the SMACCS principles for creating base, layout, and theme containers for their application styles
 * students will be able to create and use global SCSS variables for reusable styles
+* students will be able to create meaningful component tests through the use of **jest** and **enzyme**
 
 ## Resources
 * [sass getting started guide](http://sass-lang.com/guide)
