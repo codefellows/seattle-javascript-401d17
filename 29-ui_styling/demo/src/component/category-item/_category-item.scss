@@ -1,0 +1,30 @@
+//@import '../../style/lib/vars';
+
+.category-item {
+  .content-container {
+    position: relative;
+    margin: $gutter-sm 0;
+
+    .remove {
+      background: none;
+      color: red;
+      position: absolute;
+      top: 0;
+      padding: 0;
+      right: 0;
+      font-size: 2.5vw;
+
+      &:hover {
+        text-shadow: 1px 1px 1px $white;
+      }
+    }
+
+    button[type="submit"] {
+      background: green;
+
+      &:hover {
+        background: #888;
+      }
+    }
+  }
+}

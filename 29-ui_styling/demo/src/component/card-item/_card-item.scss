@@ -1,0 +1,25 @@
+@import '../../style/lib/vars';
+@import '../category-item/_category-item.scss';
+
+.card-item {
+  position: relative;
+	padding: $gutter-sm;
+  background: $white;
+  margin: $gutter-sm;
+  font-size: 2vw;
+  border: solid .5vw $black;
+  border-radius: $border-radius;
+  margin-left: 0;
+  margin-right: 0;
+  line-height: 3vw;
+
+  p {
+    margin-bottom: $gutter-sm;
+  }
+
+  button {
+    &.remove {
+      right: 1vw;
+    }
+  }
+}
