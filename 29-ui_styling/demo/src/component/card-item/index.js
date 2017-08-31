@@ -1,4 +1,4 @@
-//import './_card-item.scss';
+import './_card-item.scss';
 import React from 'react';
 import {connect} from 'react-redux';
 

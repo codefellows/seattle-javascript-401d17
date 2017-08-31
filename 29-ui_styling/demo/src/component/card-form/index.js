@@ -1,4 +1,4 @@
-//import './_card-form.scss';
+import './_card-form.scss';
 import React from 'react';
 
 class CardForm extends React.Component {
