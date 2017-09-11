@@ -1,0 +1,38 @@
+@import "vars";
+
+.landing-container {
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 120px;
+
+  h2 {
+    text-shadow: 1px 1px 1px $color-white;
+  }
+
+  .auth-nav a {
+    display: inline-block;
+    width: auto;
+    float: right;
+    padding: .95vw 1.5vw;
+    background: $color-white;
+    color: $color-black;
+    cursor: pointer;
+    margin-right: 20px;
+    border: none;
+    border-radius: 3px;
+    margin-top: 0px;
+    border: solid 1px $color-black;
+
+    &:hover {
+      $temp-color: transparentize($color-primary, 0.5) ;
+      background: $temp-color;
+      border: 1px solid $temp-color;
+    }
+
+    &:active {
+      $temp-color: transparentize($color-primary * 0.8, 0.5) ;
+      background: $temp-color;
+      border: 1px solid $temp-color;
+    }
+  }
+}

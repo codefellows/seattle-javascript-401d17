@@ -1,0 +1,43 @@
+@import "vars";
+
+.profile-form {
+  p {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  img {
+    width: 20%;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+
+  textarea {
+    color: $color-black;
+    height: 350px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border: solid 1px $color-black;
+    transition: 350ms all;
+
+    &:focus {
+      background: $color-black;
+      color: $color-white;
+    }
+  }
+
+  button[type="submit"] {
+    float: right;
+    width: auto;
+    font-size: 18px;
+    padding: 18px;
+    color: $color-white;
+    background: $color-black;
+    transition: 350ms all;
+    cursor: pointer;
+    &:hover {
+      color: $color-primary;
+      background: $color-white;
+    }
+  }
+}

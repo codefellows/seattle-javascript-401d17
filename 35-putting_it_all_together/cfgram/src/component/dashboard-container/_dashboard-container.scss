@@ -1,0 +1,70 @@
+@import "vars";
+
+.dashboard-container {
+  clear: left;
+  width: 60%;
+  padding-top: 120px;
+  margin: 0 auto;
+
+  img {
+    width: 300px;
+    border: solid 5px $color-white;
+    box-shadow: 0 8px 14px 0 rgba(1,1,1,0.2), 0 5px 18px 0 rgba(0,0,0,0.16);
+
+    &.image-preview {
+      margin-bottom: 20px;
+    }
+  }
+
+  p {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  i.fa-trash-o {
+    color: $color-primary;
+    margin-right: 10px;
+  }
+
+  i.fa-pencil {
+    color: green;
+  }
+
+  h2 {
+    border-bottom: solid 1px $color-black;
+    text-shadow: 1px 1px 1px $color-white;
+    font-size: 25px;
+    margin-bottom: 25px;
+  }
+
+  input[type="file"] {
+    background: none;
+    padding: 0;
+  }
+
+  i {
+    display: inline;
+    font-size: 20px;
+  }
+
+  button {
+    float: right;
+    width: auto;
+    font-size: 18px;
+    padding: 18px;
+    margin-bottom: 50px;
+    color: $color-white;
+    background: $color-black;
+    transition: 350ms all;
+    cursor: pointer;
+    &:hover {
+      color: $color-primary;
+      background: $color-white;
+    }
+  }
+
+  > div {
+    clear: right;
+    margin-top: 50px;
+  }
+}

@@ -1,0 +1,99 @@
+@import "vars";
+
+.navbar {
+  position: fixed;
+  height: 68px;
+  z-index: 999999;
+  box-shadow: 0px 0px 1px 1px $color-black;
+
+  .panel {
+    height: 100%;
+  }
+
+  .logo, h1, nav, button, .avatar {
+    height: 100px;
+    display: inline;
+    float: left;
+    width: auto;
+    margin: 0;
+  }
+
+  .logo {
+    width: 110px;
+    svg {
+      width: 45px;
+      height: 50px;
+      margin-top: -10px;
+      .bird {
+    fill: $color-primary;
+        transition: 500ms;
+      }
+    }
+  }
+
+  h1 {
+    transform: translate(-70px, 32px);
+    color: $color-white;
+    font-size: 25px;
+    font-family: 'Fredoka One', cursive;
+    margin-top: -30px;
+    margin-left: 15px;
+  }
+
+  nav {
+    display: block;
+    margin-left: -50px;
+
+    ul {
+      li {
+        list-style: none;
+        float: left;
+        width: 60px;
+        padding-top: 9px;
+        &.selected {
+          a {
+            text-shadow: 2px 2px 2px $color-primary;
+          }
+        }
+        a {
+          color: $color-white;
+          transition: 350ms all;
+          &:hover {
+            text-shadow: 2px 2px 2px $color-primary;
+          }
+        }
+      }
+    }
+  }
+
+  .avatar {
+    padding-top: $pad;
+    width: 10%;
+    height: 50%;
+    border-radius: 50px;
+
+    img {
+      width: 40px;
+      height: 40px;
+      margin: 0 auto;
+      border-radius: 25px;
+      position: absolute;
+      right: 100px;
+      margin-top: -11px;
+    }
+  }
+
+  button {
+    background: $color-white;
+    color: $color-black;
+    height: auto;
+    float: right;
+    margin-top: -2px;
+    cursor: pointer;
+    transition: 350ms all;
+    &:hover {
+      background: $color-primary;
+      color: $color-white;
+    }
+  }
+}

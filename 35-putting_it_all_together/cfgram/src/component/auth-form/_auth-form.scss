@@ -1,0 +1,21 @@
+@import "vars";
+
+.auth-form {
+  input.error {
+    border: 1px solid $color-error;
+  }
+
+  button[type="submit"] {
+    width: auto;
+    float: right;
+    padding: 1vw;
+    background: $color-black;
+    color: $color-white;
+    cursor: pointer;
+  }
+
+  h2 {
+    font-size: 25px;
+    margin-bottom: 25px;
+  }
+}

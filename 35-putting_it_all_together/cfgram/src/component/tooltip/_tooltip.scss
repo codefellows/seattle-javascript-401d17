@@ -1,0 +1,29 @@
+@import "../../style/_vars.scss";
+
+.tooltip {
+  height: 0;
+
+  main {
+    transform: translateY(-3em);
+    position: relative;
+    margin-bottom: $pad;
+    width: 100%;
+    
+    p {
+      background: $color-black;
+      color: $color-white;
+      display: inline-block;
+      padding: $pad;
+      width: auto;
+      border: 2px solid $color-black;
+      border-radius: $pad / 2;
+    }
+
+    .fa-caret-down {
+      position: absolute;
+      bottom: -9px;
+      left: 10px;
+    }
+
+  }
+}
