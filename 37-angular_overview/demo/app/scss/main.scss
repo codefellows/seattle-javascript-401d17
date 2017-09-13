@@ -1,0 +1,75 @@
+// ::::: $vars ::::: //
+$brand-primary: #444;
+$btn-primary: $brand-primary / 2;
+$btn-hover: #31b1c1;
+$black: #000;
+$white: #fff;
+$box-std: 100%;
+$gutter-std: 5%;
+$gutter-sm: $gutter-std / 2;
+$radius: 3px;
+$transition: 350ms all;
+
+// ::::: global styles ::::: //
+body {
+  font-family: helvetica;
+  font-size: 2vw;
+  background: $brand-primary * 3;
+}
+
+a {
+  text-decoration: none;
+  color: $black;
+  cursor: pointer;
+}
+
+h2 {
+  font-size: 5vw;
+  text-align: center;
+  text-decoration: underline;
+  color: $brand-primary;
+  margin-bottom: $gutter-std;
+}
+
+button {
+  width: 100%;
+  padding: 2% 0;
+  margin-bottom: 20px;
+  background: $btn-primary / 3;
+  color: $white;
+  border: none;
+  border-radius: $radius;
+  cursor: pointer;
+  transition: $transition;
+
+  &:hover {
+    background: $btn-hover;
+  }
+}
+
+input[type="text"] {
+  float: left;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 2%;
+  border: none;
+  border-radius: $radius;
+  transition: $transition;
+  
+  &:focus {
+    background: $black;
+    color: $white;
+  }
+}
+
+select {
+  width: 100%;
+  margin-bottom: $gutter-sm;
+}
+
+pre {
+  overflow: auto;
+  width: 100%;
+  font-family: monospace;
+  margin: $gutter-std;
+}
